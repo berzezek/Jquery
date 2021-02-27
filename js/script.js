@@ -36,7 +36,6 @@ $(".job").on("click", function () {
     $(this).attr('placeholder', '');
 });
 
-
 $(".btn, .job").on("mouseover", function () {
     $(this).css('border-color', '#695050');
 });
