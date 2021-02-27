@@ -1,7 +1,7 @@
-
+// $('.elem').slideUp();
 $(".show").on("click", function () {
     $(".some").css('display', 'block');
-    $("p.some__new").css('display', 'block');
+    $("p.some__new").slideDown();
 });
 
 let counter = 0;
@@ -14,17 +14,12 @@ $(".insert").on("click", function () {
         $(".some").next().text("Задание #"+ counter + " " + $(".job").val());
         $("p.some").prev().attr({'class':'some__new'});
 
-        $(".elem").css('opacity', '1');
+        $(".elem").fadeIn();
+        $(".elem").fadeOut(1500, 0);
         $(".job").val("");
-
-        setTimeout(function () {
-            $(".elem").css('opacity', '0');
-        }, 1500)
-
     } else {
-        $(".elem p").css('display', 'none');
         alert("Введите значение!");
-    }
+    };
 });
 
 $(".job").on("click", function () {
@@ -63,8 +58,8 @@ $(".btn").on("click", function () {
 });
 
 $('h2').on("mouseover", function () {
-    $('img').css('display', 'block');
+    $('img').slideDown();
 })
 $('h2').on("mouseout", function () {
-    $('img').css('display', 'none');
+    $('img').slideUp();
 })

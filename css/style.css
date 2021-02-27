@@ -46,7 +46,7 @@ h2 {
     background-color: #a57d7d;
     border-radius: 10px;
     margin-left: 10px;
-    opacity: 0; /* не нравилось что прыгал нижний список */
+    display: none;
 }
 #spisok {
     width: 450px;
