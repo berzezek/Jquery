@@ -53,10 +53,31 @@ h2 {
     margin-top: 20px;
 }
 
-.some {
+.some{
+
     padding: 10px;
     margin-top: 5px;
     border: 2px solid silver;
     border-radius: 10px;
     display: none;
+    opacity: 1;
+}
+.some__new {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid silver;
+    border-radius: 10px;
+    display: none;
+    opacity: 1;
+}
+
+img {
+    position: absolute;
+    /* margin-top: 100px;
+    margin-left: 50px; */
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+    display: none;
+
 }
