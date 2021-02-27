@@ -3,7 +3,7 @@
     margin: 0;
     outline: none;
     background-color: #b1b1b1;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
 }
 
@@ -37,7 +37,7 @@ h2 {
     padding: 10px;
     margin-left: 20px;
     border-radius: 10px;
-    /* background-color: #8587bd; */
+    background-color: #8587bd;
     margin-bottom: 20px;
 }
 .elem p {
