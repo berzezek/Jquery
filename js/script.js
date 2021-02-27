@@ -1,9 +1,5 @@
 $(".show").on("click", function () {
     $(".some").css('display', 'block');
-    setTimeout(function () {
-        $(".some").css('display', 'none');
-    }, 1500)
-
 });
 
 let counter = 0;
@@ -14,12 +10,12 @@ $(".insert").on("click", function () {
         counter ++;
         $("#spisok").after($('<p>').attr({'class':'some'}));
         $("#spisok").next().text("Задание #"+ counter +"  " + $(".job").val());
-        $(".elem p").css('display', 'block');
+        $(".elem").css('opacity', '1');
         $(".job").val("");
 
         setTimeout(function () {
-            $(".elem p").css('display', 'none');
-        }, 2000)
+            $(".elem").css('opacity', '0');
+        }, 1500)
 
     } else {
         $(".elem p").css('display', 'none');
@@ -31,8 +27,9 @@ $(".job").on("click", function () {
     $(this).css({
         'color': 'red',
         'font-size': '40px',
-        // 'font-style': 'bold'
+        'font-style': 'bold',
     })
+    $(".job").val("")
     $(this).attr('placeholder', '');
 });
 
@@ -48,4 +45,15 @@ $(".btn").on("mouseover", function () {
 });
 $(".btn").on("mouseout", function () {
     $(this).css('background', 'none');
+});
+
+
+$(".btn").on("click", function () {
+    $('.job').css({
+        'color': 'blue',
+        'font-size': '16px',
+        'font-style': 'normal',
+    })
+    $(".job").val("");
+    $(".job").attr('placeholder', 'Задание');
 });

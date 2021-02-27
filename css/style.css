@@ -9,9 +9,9 @@
 
 .buy {
     position: absolute;
-    width: 450px;
-    margin-left: 100px;
-    margin-top: 100px;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%)
 }
 
 h2 {
@@ -37,34 +37,25 @@ h2 {
     padding: 10px;
     margin-left: 20px;
     border-radius: 10px;
-    /* background-color: #8587bd; */
     margin-bottom: 20px;
 }
-.elem p {
+.elem {
     text-align: center;
     width: 400px;
     padding: 20px;
     background-color: #a57d7d;
     border-radius: 10px;
     margin-left: 10px;
-    opacity: 0.5;
-    display: none;
+    opacity: 0; /* не нравилось что прыгал нижний список */
 }
 #spisok {
-    padding: 10px;
     width: 450px;
-
+    margin-top: 20px;
 }
 
 .some {
     padding: 10px;
-    border: 2px solid silver;
-    border-radius: 10px;
-    display: none;
-}
-
-.some__new {
-    padding: 10px;
+    margin-top: 5px;
     border: 2px solid silver;
     border-radius: 10px;
     display: none;
