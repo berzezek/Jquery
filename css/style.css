@@ -3,7 +3,7 @@
     margin: 0;
     outline: none;
     background-color: #b1b1b1;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 16px;
 }
 
@@ -37,7 +37,7 @@ h2 {
     padding: 10px;
     margin-left: 20px;
     border-radius: 10px;
-    background-color: #8587bd;
+    /* background-color: #8587bd; */
     margin-bottom: 20px;
 }
 .elem p {
@@ -57,6 +57,13 @@ h2 {
 }
 
 .some {
+    padding: 10px;
+    border: 2px solid silver;
+    border-radius: 10px;
+    display: none;
+}
+
+.some__new {
     padding: 10px;
     border: 2px solid silver;
     border-radius: 10px;
